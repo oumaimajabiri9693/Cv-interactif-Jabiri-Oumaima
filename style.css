@@ -1,0 +1,127 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #333;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid #3498db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info span {
+  font-size: 0.95rem;
+}
+
+.section-title {
+  color: #2980b9;
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3498db;
+  margin-bottom: 1.5rem;
+}
+
+.cv-item {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item-title {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+  font-size: 1.15rem;
+}
+
+.item-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-details {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.skills-container {
+  justify-content: flex-start;
+}
+
+.skill-tag {
+  background: #e74c3c;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.skill-tag:nth-child(2n) { background: #2ecc71; }
+.skill-tag:nth-child(3n) { background: #f39c12; }
+.skill-tag:nth-child(4n) { background: #9b59b6; }
+.skill-tag:nth-child(5n) { background: #1abc9c; }
+
+.skill-tag:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 576px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
+
+.personal-info {
+  background-color: #BBDCA1; 
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.personal-info .name {
+  color: #2c3e50; 
+}
+
+.personal-info .subtitle,
+.personal-info .contact-info span {
+  color: #4a554a; 
+  font-weight: 500;
+}
+
+.personal-info .profile-pic {
+  border-color: #8ab47d; 
+}
